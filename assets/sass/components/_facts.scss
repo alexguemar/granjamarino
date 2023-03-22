@@ -1,0 +1,84 @@
+.fun-facts {
+  padding: 0;
+  background-image: url(../images/facts.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+}
+.fun-facts.overlay::before {
+  opacity: 0.9;
+  background: var(--black);
+}
+.fun-facts .fun-inner {
+  padding: 70px 0 100px;
+}
+.fun-facts .single-fun {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: none;
+  z-index: 3;
+  padding: 0 30px;
+}
+.fun-facts .single-fun .head {
+  overflow: hidden;
+}
+.fun-facts .single-fun .icon {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  line-height: 80px;
+  left: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.5);
+}
+.fun-facts .single-fun:hover .icon {
+  background: 0 0;
+}
+.fun-facts .single-fun i {
+  font-size: 30px;
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  border-radius: 100%;
+  color: #fff;
+  background: var(--blue);
+  top: 6px;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+.fun-facts .single-fun:hover i {
+  transform: scale(1.2) rotate(360deg);
+  background: #fff;
+  color: var(--blue);
+}
+.fun-facts .counter {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.fun-facts .single-fun h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.fun-facts .single-fun p {
+  color: #fff;
+  margin-top: 20px;
+}

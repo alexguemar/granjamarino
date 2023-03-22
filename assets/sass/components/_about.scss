@@ -1,0 +1,127 @@
+.about .feature-content {
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+.about .feature-content .title {
+  margin-bottom: 30px;
+}
+
+.about .feature-content .title h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.about .feature-item {
+  margin-bottom: 15px;
+  position: relative;
+
+  padding-right: 30px;
+}
+.about .feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.about .feature-item .banner-content {
+  display: inline-block;
+}
+.about .feature-item .banner-content .title {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+}
+.about .feature-item .banner-content p {
+  color: #777;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  margin-top: 6px;
+}
+
+.feature-right {
+  width: 100%;
+  position: relative;
+  background-image: url(../images/photos/edit3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+}
+.feature-right .watch-inner {
+  display: inline-block;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 50%;
+  margin-top: -80px;
+}
+.feature-right .video-head {
+  display: inline-block;
+  border-radius: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 35px;
+}
+.feature-right .video-head .video {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #fff;
+  color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 28px;
+  padding-left: 5px;
+}
+.feature-right .video-head .video:hover {
+  background: #3e54ff;
+  color: #fff;
+}
+.feature-right .video-head .video {
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  color: #3e54ff;
+  text-align: center;
+  line-height: 84px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 5;
+}
+.feature-right .video-head .video:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: play-btn-1 1.8s linear infinite;
+  -moz-animation: play-btn-1 1.8s linear infinite;
+  -o-animation: play-btn-1 1.8s linear infinite;
+  animation: play-btn-1 1.8s linear infinite;
+}
+.feature-right .video-head .video:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: play-btn-2 1.5s linear infinite;
+  -moz-animation: play-btn-2 1.5s linear infinite;
+  -o-animation: play-btn-2 1.5s linear infinite;
+  animation: play-btn-2 1.5s linear infinite;
+}

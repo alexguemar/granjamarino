@@ -1,0 +1,190 @@
+.gallery-section.section {
+  padding-bottom: 70px;
+  background-color: #f9faff;
+}
+.gallery-section .portfolio-btn-wrapper {
+  margin-bottom: 0;
+  text-align: center;
+}
+.gallery-section .section-title {
+  margin-bottom: 50px;
+}
+
+.gallery-item-wrapper {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.gallery-item-wrapper:hover .portfolio-overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.gallery-item-wrapper .portfolio-img {
+  height: 300px;
+}
+.gallery-item-wrapper .portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-item-wrapper .portfolio-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  background: var(--blue-dark-50);
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gallery-item-wrapper .portfolio-overlay {
+    padding: 30px 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery-item-wrapper .portfolio-overlay {
+    padding: 30px 20px;
+  }
+}
+.gallery-item-wrapper .portfolio-overlay .overlay-content h4 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.gallery-item-wrapper .portfolio-overlay .overlay-content p {
+  color: #fff;
+  margin-bottom: 35px;
+}
+.gallery-item-wrapper .portfolio-overlay .overlay-content .border-btn {
+  padding: 8px 27px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.gallery-item-wrapper .portfolio-overlay .overlay-content .border-btn:hover {
+  color: #3e54ff;
+  background: #fff;
+}
+.single-portfolio .single-portfolio-img {
+  border-radius: 0;
+  overflow: hidden;
+}
+.single-portfolio .single-portfolio-img img {
+  width: 100%;
+}
+.project-info-box ul li {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+.project-info-box ul li:last-child {
+  margin-bottom: 0;
+}
+.project-info-box ul li .destination {
+  width: 40%;
+  color: #051441;
+  text-transform: uppercase;
+}
+.portfolio.single .content p {
+  margin-top: 26px;
+}
+.portfolio.single .project-sidebar .sb-project-detail {
+  background: #fbfbfb;
+  margin-top: 30px;
+}
+.portfolio.single .project-sidebar .sb-project-detail .title {
+  padding: 14px 20px;
+  background: #3e54ff;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 23px;
+}
+.portfolio.single .project-sidebar .sb-project-detail ul {
+  padding: 25px 30px;
+}
+.portfolio.single .project-sidebar .sb-project-detail ul li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.05);
+}
+.portfolio.single .project-sidebar .sb-project-detail ul li span {
+  width: 150px;
+  display: inline-block;
+  color: #1c1b1b;
+  font-weight: 600;
+}
+.portfolio.single .project-sidebar .sb-project-detail ul li:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.portfolio.single .gallery-wrap .gallery-item {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio.single .gallery-wrap .gallery-item a.image-popup {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  text-align: center;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.portfolio.single .gallery-wrap .gallery-item a.image-popup:hover {
+  background: #106eea;
+  border-color: #106eea;
+}
+.portfolio.single .gallery-wrap .gallery-item:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.portfolio.single .gallery-wrap .gallery-item:hover a.image-popup {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio.single .gallery-wrap .gallery-item:hover:after {
+  opacity: 1;
+  visibility: visible;
+}

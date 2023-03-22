@@ -1,0 +1,104 @@
+.products {
+  background: #f9faff;
+  padding-bottom: 70px !important;
+}
+.products-card {
+  height: 650px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+.products-card .team-img {
+  height: 50%;
+  position: relative;
+}
+.products-card .team-img img {
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.products-card .team-img .team-social-icon .social-link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.products-card .team-img .team-social-icon .social-link li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.products-card .team-img .team-social-icon .social-link li a:hover {
+  background-color: #3e54ff;
+  color: #fff;
+  border-radius: 50px;
+}
+.products-card .content {
+  height: 50%;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.products-card .content::before {
+  content: "";
+  position: absolute;
+  background-color: var(--blue);
+  width: 90%;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 0;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+}
+.products-card .content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.products-card .content span {
+  color: #6e607c;
+}
+.products-card .content p {
+  color: #6e607c;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.products .content .button {
+  position: absolute;
+  bottom: 30px;
+}
+
+.products .content .button .btn {
+  color: var(--blue);
+  background: 0 0;
+  border: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+  border: 2px solid var(--blue);
+}
+
+.products .content .button .btn {
+  margin-right: 10px;
+}
+
+.products .content .button .btn .dir-part {
+  background-color: var(--blue);
+}
+
+.products .content .button .btn:hover {
+  color: #fff;
+}
+
+.products .content .button .btn:last-child {
+  margin-right: 0;
+}
